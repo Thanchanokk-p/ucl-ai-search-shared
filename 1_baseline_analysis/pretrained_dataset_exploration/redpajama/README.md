@@ -1,6 +1,7 @@
-# 🔍 RedPajama + RefinedWeb Analysis
+# 🔍 RedPajama Analysis
 
-This project explores the use of the **RedPajama** dataset — an open-source, pretraining-ready web-scale dataset — to enhance Large Language Model (LLM) performance for enterprise and retail applications. Further analysis will also include **RefinedWeb** as a comparative fine-tuning dataset for domain-specific optimization.
+This project explores the use of the **RedPajama** dataset — an open-source, pretraining-ready, web-scale dataset — to enhance Large Language Model (LLM) performance for enterprise and retail applications. Further analysis will also include **RefinedWeb** as a comparative fine-tuning dataset for domain-specific optimization (see the `refinedweb` folder for details).
+
 
 ---
 
@@ -36,14 +37,14 @@ Ensure your local or cloud environment matches or is compatible with these versi
 
 ## 🗂️ Project Structure
 ```bash
-refinedweb-shared/
+redpajama/
 ├── data/
 │   ├── csv_data/          # Intermediate processed CSVs
 │   ├── filtered_data/     # Cleaned data after brand filtering
 │
 ├── notebooks/
-│   ├── 1_refinedweb-analysis.ipynb       # Spark-based EDA and filtering
-│   └── 2_refinedweb_analysis_nlp.ipynb   # BERT modeling and text analytics
+│   ├── 1_redpajama-analysis.ipynb       # Spark-based EDA and filtering
+│   └── 2_redpajama_analysis_nlp.ipynb   # BERT modeling and text analytics
 │
 ├── Dockerfile
 ├── get-docker.sh
