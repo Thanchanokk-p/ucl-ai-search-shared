@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.parquet_data/
+.filtered_data/
+.ipynb_checkpoints/
+.env
+.env.*
+.DS_Store
+*.log
+*.csv 
+*.parquet
+
+# keep .gitkeep
+!data/csv_data/.gitkeep
+!data/filtered_data/.gitkeep

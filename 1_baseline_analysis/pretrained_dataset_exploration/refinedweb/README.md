@@ -1,18 +1,12 @@
 # 🔍 RefinedWeb Analysis
 
-This project explores the potential of enhancing LLM (Large Language Model) performance using **RefinedWeb** — a brand-specific, curated web dataset tailored for retail and enterprise-focused use cases.
+This project explores the potential of enhancing LLM (Large Language Model) search and response performance using **RefinedWeb** — a brand-specific, curated web dataset tailored for retail and enterprise-focused use cases.
 
 ---
 
 ## 📚 What is RefinedWeb?
 
-RefinedWeb is a cleaned, filtered, and deduplicated web crawl dataset optimized for training and evaluating large-scale language models. It includes high-quality, domain-specific text content suitable for commercial applications such as:
-
-- Brand intelligence  
-- Product sentiment analysis  
-- Customer service automation  
-
----
+RefinedWeb is a cleaned, filtered, and deduplicated web crawl dataset optimized for training and evaluating large-scale language models. It includes high-quality, domain-specific text content suitable for commercial applications
 
 ## 🎯 Project Objectives
 
@@ -47,18 +41,18 @@ refinedweb-shared/
 │   ├── csv_data/          # Intermediate processed CSVs
 │   ├── filtered_data/     # Cleaned data after brand filtering
 │   ├── parquet_data/      # Raw files from HuggingFace
-│   └── paths.txt          # List of remote .parquet file URLs
+│   └──── paths.txt          # List of remote .parquet file URLs
 │
 ├── notebooks/
 │   ├── 1_refinedweb-analysis.ipynb       # Spark-based EDA and filtering
-│   └── 2_refinedweb_analysis_nlp.ipynb   # BERT modeling and text analytics
-│
+│   ├── 2_refinedweb_analysis_nlp.ipynb   # BERT modeling and text analytics
+│   
 ├── scripts/
 │   ├── filter_hm_duckdb.py
 │   ├── filter_primark_duckdb.py
 │   ├── filter_zara_duckdb.py
-│   └── sparkcc.py                        # Spark job for processing
-│
+│   ├── sparkcc.py                        # Spark job for processing
+│   └── word_count_parquet.py             # Spark word count module
 ├── Dockerfile
 ├── get-docker.sh
 ├── download_parquet.sh

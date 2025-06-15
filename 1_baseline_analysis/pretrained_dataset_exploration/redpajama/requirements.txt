@@ -1,0 +1,40 @@
+# Core
+numpy
+pandas==2.2.3
+matplotlib
+seaborn
+psutil
+python-dateutil
+tldextract
+
+# NLP
+nltk
+vaderSentiment
+spacy
+
+# Spark
+pyspark==4.0.0
+
+# AWS & Networking
+boto3
+botocore
+requests
+urllib3<2
+ujson
+
+# Web Parsing
+beautifulsoup4
+lxml
+idna
+
+# Optional: Web Archive Parsing (uncomment if needed)
+# pydoop
+# fastwarc==0.14.1
+# Resiliparse==0.14.1
+
+# Additional
+datasets
+wordcloud
+
+# Database
+duckdb
