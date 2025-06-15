@@ -36,7 +36,7 @@ Ensure your local or cloud environment matches or is compatible with these versi
 
 ## 🗂️ Project Structure
 ```bash
-refinedweb-shared/
+refinedweb/
 ├── data/
 │   ├── csv_data/          # Intermediate processed CSVs
 │   ├── filtered_data/     # Cleaned data after brand filtering
