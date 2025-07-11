@@ -1,0 +1,6 @@
+# unsloth and transformer version
+git+https://github.com/unslothai/unsloth.git
+git+https://github.com/huggingface/peft.git
+transformers>=4.40.0
+accelerate
+bitsandbytes

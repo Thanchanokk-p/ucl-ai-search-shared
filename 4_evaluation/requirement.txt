@@ -1,0 +1,10 @@
+langchain-google-genai
+langchain_community
+wikipedia
+fuzzywuzzy[speedup]
+rapidfuzz
+requests
+beautifulsoup4
+transformers
+accelerate
+bitsandbytes
