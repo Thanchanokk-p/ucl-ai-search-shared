@@ -1,0 +1,52 @@
+# Jupyter / IPython
+ipython                 # Interactive shell & display utilities
+
+# Core Scientific Stack
+numpy
+pandas==2.2.3
+scipy                   # stats, correlations (pearsonr, etc.)
+matplotlib
+seaborn
+psutil
+python-dateutil
+tldextract
+tqdm                    # progress bars
+
+# NLP
+nltk
+vaderSentiment
+spacy
+emoji
+langdetect
+
+# Spark
+pyspark==4.0.0
+
+# AWS & Networking
+boto3                   # auto-installs matching botocore
+requests
+urllib3<2
+ujson
+
+# Web Parsing
+beautifulsoup4
+lxml
+idna
+
+# Data I/O & Storage
+pyarrow                 # Parquet read/write (pq)
+duckdb                  # in-process OLAP SQL
+gdown                   # Google-Drive file download
+
+# Datasets & Visualisation Extras
+datasets
+wordcloud
+
+# Optional Web-Archive Parsing (uncomment if needed)
+# pydoop
+# fastwarc==0.14.1
+# resiliparse==0.14.1
+
+# keybert
+keybert 
+sentence-transformers
