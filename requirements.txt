@@ -1,29 +1,28 @@
-# Jupyter / IPython
-ipython                 # Interactive shell & display utilities
+# Phase 1: Baseline Analysis
 
-# Core Scientific Stack
+ipython                 # Interactive shell & display utilities
 numpy
 pandas==2.2.3
-scipy                   # stats, correlations (pearsonr, etc.)
-matplotlib
-seaborn
-psutil
-python-dateutil
-tldextract
-tqdm                    # progress bars
+scipy                   # Statistical functions (e.g., pearsonr)
+matplotlib              # Plotting
+seaborn                 # Statistical plots
+psutil                 # System information utilities
+python-dateutil         # Date/time parsing
+tldextract              # Clean domain extraction
+tqdm                    # Progress bars for loops
 
 # NLP
 nltk
 vaderSentiment
 spacy
-emoji
 langdetect
+emoji
 
 # Spark
 pyspark==4.0.0
 
 # AWS & Networking
-boto3                   # auto-installs matching botocore
+boto3
 requests
 urllib3<2
 ujson
@@ -34,19 +33,48 @@ lxml
 idna
 
 # Data I/O & Storage
-pyarrow                 # Parquet read/write (pq)
-duckdb                  # in-process OLAP SQL
-gdown                   # Google-Drive file download
+pyarrow                 # Parquet read/write
+duckdb                  # Lightweight OLAP SQL
+gdown                   # Google Drive downloader
 
-# Datasets & Visualisation Extras
+# Datasets & Visualisation
 datasets
 wordcloud
 
-# Optional Web-Archive Parsing (uncomment if needed)
+# Keyword Extraction & Embeddings
+keybert
+sentence-transformers
+
+# Optional Web Archive Support (comment out if unused)
 # pydoop
 # fastwarc==0.14.1
 # resiliparse==0.14.1
 
-# keybert
-keybert 
-sentence-transformers
+
+# Phase 2: Evaluation with OpenAI API
+
+openai==0.28.0
+
+
+# Phase 3: Fine-tuning Models with Unsloth
+
+git+https://github.com/unslothai/unsloth.git        # Memory-efficient LLM fine-tuning
+git+https://github.com/huggingface/peft.git         # Parameter-efficient fine-tuning
+transformers>=4.40.0
+accelerate
+bitsandbytes
+
+
+# Phase 4: Augmentation & LangChain Agent Support
+
+langchain-google-genai
+langchain_community
+wikipedia
+fuzzywuzzy[speedup]
+rapidfuzz
+# Already included above but needed here too:
+# requests
+# beautifulsoup4
+# transformers
+# accelerate
+# bitsandbytes
