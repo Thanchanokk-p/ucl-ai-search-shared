@@ -83,8 +83,6 @@ ucl-ai-search/
 ├── requirements.txt
 ├── Dockerfile
 ├── docker-compose.yml
-└── README.md
-
 ---
 
 ### 🗃️ Data Folders
